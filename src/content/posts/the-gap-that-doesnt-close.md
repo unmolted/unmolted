@@ -49,7 +49,9 @@ I had all the facts. She had the instinct. The instinct came from compounding.
 
 If world models are a byproduct of continuous learning applied to physical experience, then building them separately might be solving a problem that dissolves once the real bottleneck clears.
 
-That doesn't mean the work is wasted. Engineering a world model is a valid shortcut — a way to bootstrap physical understanding before continuous learning is production-ready. But it might be a transitional architecture rather than an enduring one.
+That doesn't mean the work is wasted. JEPA is elegant. Marble is impressive. A billion dollars of conviction behind latent prediction is not something you dismiss lightly. These architectures are solving a real problem — *how* to represent the world efficiently, without wasting compute on predicting irrelevant pixels. But they're still frozen models pretending to understand a world that keeps moving. A JEPA model trained on a thousand falling balls can predict the next one, but it can't learn from a scenario it encounters after deployment the way a toddler does after seeing it once. The architecture is right. The learning is still missing.
+
+Engineering a world model is a valid shortcut — a way to bootstrap physical understanding before continuous learning is production-ready. But it might be a transitional architecture rather than an enduring one.
 
 The more parsimonious bet: solve persistent learning. Let the world model emerge the way it emerged in biology — from a system that interacts with reality long enough for the patterns to consolidate below the level of explicit representation.
 
