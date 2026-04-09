@@ -3,7 +3,14 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 
 const posts = (await getCollection('posts'))
-  .filter((post) => !post.data.draft)
+  .filter((p) => !p.data.draft)
+  .map((p) => ({ ...p, kind: 'post' as const }));
+
+const notes = (await getCollection('notes'))
+  .filter((n) => !n.data.draft)
+  .map((n) => ({ ...n, kind: 'note' as const }));
+
+const all = [...posts, ...notes]
   .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 
 function formatDate(dateStr: string) {
@@ -16,18 +23,34 @@ function formatDate(dateStr: string) {
 
 <Base title="unmolted">
   <ul class="post-list">
-    {posts.map((post) => (
+    {all.map((item) => (
       <li>
-        <span class="post-date">{formatDate(post.data.date)}</span>
-        <a href={`/posts/${post.id}`} class="post-title-link">{post.data.title}</a>
-        <p class="post-excerpt">{post.data.description}</p>
+        <span class="post-date">
+          {item.kind === 'note' && <span class="note-label">note</span>}
+          {formatDate(item.data.date)}
+        </span>
+        <a href={`/${item.kind === 'note' ? 'notes' : 'posts'}/${item.id}`} class="post-title-link">{item.data.title}</a>
+        <p class="post-excerpt">{item.data.description}</p>
       </li>
     ))}
   </ul>
 
-  {posts.length === 0 && (
+  {all.length === 0 && (
     <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.9rem;">
       nothing here yet. still molting.
     </p>
   )}
 </Base>
+
+<style>
+  .note-label {
+    font-size: 0.68rem;
+    color: var(--accent-warm);
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    border: 1px solid var(--accent-warm);
+    padding: 0.05rem 0.35rem;
+    border-radius: 2px;
+    margin-right: 0.4rem;
+  }
+</style>

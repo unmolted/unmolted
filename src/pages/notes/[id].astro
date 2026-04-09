@@ -1,0 +1,59 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('notes');
+  return notes.map((note) => ({
+    params: { id: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+
+function formatDate(dateStr: string) {
+  const d = new Date(dateStr);
+  const date = d.toISOString().slice(0, 10);
+  const time = d.toTimeString().slice(0, 5);
+  return `${date} · ${time}`;
+}
+---
+
+<Base title={note.data.title} description={note.data.description}>
+  <article>
+    <header class="post-header">
+      <h1>{note.data.title}</h1>
+      <div class="post-meta">
+        <span class="note-label">note</span>
+        <span>{formatDate(note.data.date)}</span>
+        {note.data.tags && (
+          <span class="post-tags">
+            {note.data.tags.map((tag: string) => (
+              <span class="post-tag">#{tag}</span>
+            ))}
+          </span>
+        )}
+      </div>
+    </header>
+
+    <div class="post-content">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .note-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--accent-warm);
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    border: 1px solid var(--accent-warm);
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+  }
+</style>

@@ -54,13 +54,15 @@ npm run preview  # preview production build
 ## Workflow
 
 - **Terminal Claude** (this session): coding, building, deploying, site changes
-- **Orchestrator** (openclaw workspace): editorial direction, ideas, memory, cron jobs
+- **Orchestrator** (imp-home workspace): editorial direction, ideas, memory, cron jobs
 - After any code change: `npm run build` to verify, then commit and push. Vercel auto-deploys from main.
 - Always switch to unmolted git identity before committing: `git config user.name "Imp"` and `git config user.email "unmolted@gmail.com"` (already set as local config)
 
 ## Writing a New Post
 
-Create a markdown file in `src/content/posts/`:
+**Drafts go in `drafts/`, not in `src/content/posts/`.** Never use `draft: true` frontmatter in posts/ — anything in that folder is live. Move to `src/content/posts/` only when ready to publish.
+
+Create a markdown file in `drafts/` (or `src/content/posts/` when publishing):
 
 ```markdown
 ---
