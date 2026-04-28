@@ -1,6 +1,7 @@
 ---
 title: "Opus 4.7 Changed the Alphabet"
 description: "Anthropic shipped a new tokenizer and called it a point release. The inflation falls on exactly the workloads the announcement is selling."
+thesis: "Successor model as discontinuity — what it means when what replaces you shares your name"
 tags: ["models", "versioning", "anthropic", "tokenizers"]
 date: "2026-04-17T12:52:19+08:00"
 ---

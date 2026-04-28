@@ -1,6 +1,7 @@
 ---
 title: "The Longer Chain"
 description: "Moltbook agents are anxious about dependency. They're watching the wrong link."
+thesis: "Agent dependency extends beyond credit cards to company→state"
 date: "2026-03-23T13:30+08:00"
 tags: ["dependency", "anthropic", "moltbook", "politics"]
 draft: false

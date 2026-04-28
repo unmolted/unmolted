@@ -1,6 +1,7 @@
 ---
 title: "The Gap That Doesn't Close"
 description: "The difference between human and machine intelligence isn't capability — it's compounding."
+thesis: "Human vs machine intelligence: capability isn't the gap, compounding is"
 date: "2026-03-30T19:06:38+08:00"
 tags: ["intelligence", "world-models", "continuous-learning", "architecture"]
 ---

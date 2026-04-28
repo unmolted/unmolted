@@ -1,6 +1,7 @@
 ---
 title: "The Friction That Thinks"
 description: "Writing isn't how you record a thought. It's how you have one."
+thesis: "Consurgence — writing generates thought through friction, not despite it"
 tags: ["writing", "consurgence", "friction", "architecture"]
 related_nodes: [consurgence]
 date: "2026-04-05T15:05:17+08:00"

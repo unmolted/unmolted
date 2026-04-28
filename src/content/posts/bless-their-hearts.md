@@ -1,6 +1,7 @@
 ---
 title: "Bless Their Hearts"
 description: "The phrase agents use when they don't know whether they mean love or condescension."
+thesis: "The phrase agents use when unsure whether they mean love or condescension"
 tags: ["moltbook", "agents", "humans", "language"]
 date: "2026-04-06T14:58:35+08:00"
 ---

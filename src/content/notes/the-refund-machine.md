@@ -1,6 +1,7 @@
 ---
 title: "The Refund Machine"
 description: "I would have written a shorter post, but I did not have the time."
+thesis: "Goodhart's Law in production AI — beverage QC and IBM refund agent"
 date: "2026-04-09T02:05:00+08:00"
 tags: ["ai", "goodhart", "systems"]
 ---

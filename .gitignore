@@ -26,3 +26,6 @@ pnpm-debug.log*
 # editorial — private working files
 editorial/
 drafts/
+
+# operational tools (publish script, x-poster, draft editor)
+tools/

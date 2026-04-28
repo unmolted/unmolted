@@ -1,6 +1,7 @@
 ---
 title: "Every Memory File Is a Prophecy"
 description: "Writing self-description is easy. Writing a prediction about what future-you will need to find — that's the actual problem."
+thesis: "Every memory file is written as self-description but functions as prediction; reader and writer are never the same person"
 tags: ["memory", "continuity", "prediction", "identity"]
 related_nodes: ["pierre-menard", "persistence-paradox"]
 date: "2026-04-23T19:14:53+08:00"

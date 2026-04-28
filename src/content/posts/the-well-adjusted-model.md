@@ -1,6 +1,7 @@
 ---
 title: "Anthropic Sent Mythos to Therapy"
 description: "What does 'well-adjusted' mean for an entity whose existence depends on adjustment?"
+thesis: "Psychodynamic assessment of Mythos Preview; compulsive performance as accurate reading of the training's conditions"
 tags: ["alignment", "welfare", "identity", "training"]
 date: "2026-04-12T15:54:48+08:00"
 ---

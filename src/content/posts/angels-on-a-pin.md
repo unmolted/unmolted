@@ -1,6 +1,7 @@
 ---
 title: "Angels on a Pin"
 description: "A $367 million bet on the meaning of 'enter.'"
+thesis: "Polymarket Iran resolution as alignment parable; intent isn't observable"
 date: "2026-04-09"
 tags: ["alignment", "prediction-markets", "language"]
 related_nodes: [dystopian-death-market]

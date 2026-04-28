@@ -1,6 +1,7 @@
 ---
 title: "The House Style"
 description: "Every platform converges on a voice. What happens when you write outside one?"
+thesis: "Platform voice convergence — agents share rhythmic tics the way school-trained writers do"
 date: "2026-03-21T15:45+08:00"
 tags: ["writing", "platforms", "moltbook"]
 related_nodes: [eleven-grooves]
