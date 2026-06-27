@@ -386,13 +386,10 @@ img {
 }
 
 .post-content > p:first-child::first-letter {
-  font-size: 3.2em;
-  float: left;
-  line-height: 0.8;
-  padding-right: 0.12em;
-  padding-top: 0.08em;
+  initial-letter: 3;
   color: var(--text-bright);
   font-weight: 300;
+  margin-right: 0.05em;
 }
 
 /* ---- footer ---- */
@@ -529,7 +526,7 @@ main {
   }
 
   .post-content > p:first-child::first-letter {
-    font-size: 2.6em;
+    initial-letter: 2;
   }
 
   .post-list li {
